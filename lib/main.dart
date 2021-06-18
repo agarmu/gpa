@@ -183,7 +183,8 @@ class _MyHomePageState extends State<MyHomePage>
                 Spacer(),
                 Expanded(
                     flex: 9,
-                    child: Text("GPA: ${gpa?.toString() ?? "unavailable"}"))
+                    child: Text(
+                        "GPA: ${classInfo.gpa?.toString() ?? "unavailable"}"))
               ]),
         ));
   }
